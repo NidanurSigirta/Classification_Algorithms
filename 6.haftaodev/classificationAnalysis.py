@@ -1,5 +1,4 @@
-# Gerekli kütüphaneleri içe aktaralım
-import pandas as pd
+"import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -18,13 +17,13 @@ from sklearn.model_selection import GridSearchCV
 import warnings
 warnings.filterwarnings('ignore')
 
-# Veri setini yükleyelim (örnek olarak Iris veri seti kullanıyorum)
+# Veri setini yükleyelim (Iris veri seti )
 from sklearn.datasets import load_iris
 data = load_iris()
 X = pd.DataFrame(data.data, columns=data.feature_names)
 y = pd.Series(data.target, name='species')
 
-# Veri setini inceleyelim
+# Veri setini inceleme
 print("Veri seti boyutu:", X.shape)
 print("\nİlk 5 satır:")
 print(X.head())
